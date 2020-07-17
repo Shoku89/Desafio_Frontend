@@ -1,18 +1,14 @@
 import React, {Component} from 'react';
 import './Calc.css';
 import Conversor from "../Components/Conversor";
-import Footer from '../Components/Footer';
-import Menu from '../Components/Menu';
+import Header from '../Components/Header';
 
 class Calc extends Component {
   
   render() {
     return (
       <div className="Calc">
-        <div className="Header">
-        <h1>Conversor</h1>
-        <Menu />
-      </div>  
+          <Header />
         <h1>Conversor de moedas</h1>
         <div className="linha">
           <Conversor moedaA="USD" moedaB="BRL"></Conversor>
